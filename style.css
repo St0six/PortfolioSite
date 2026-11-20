@@ -127,6 +127,14 @@ main {
         text-align: center;
     }
 
+    .feature-box h3 {
+        text-align: center;
+    }
+
+    .feature-box h4 {
+        text-align: center;
+    }
+
 @media (max-width: 700px) {
     .card-grid,
     .feature-grid {
@@ -136,8 +144,8 @@ main {
 
 .badge {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     margin-inline: auto;
 }
