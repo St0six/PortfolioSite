@@ -32,12 +32,72 @@
                 <h3>EMAP-OS</h3>
                 <h4>Engravers Management and Product Ordering System</h4>
                 <p>Brief description of your role and key contributions.</p>
+                <pre class="code-box">EMAP-OS Business Rules
+
+A LaserTasks Customer has zero to many LaserTasks Orders. 
+
+A LaserTasks Order is for a LaserTasks Customer. 
+
+A LaserTasks Order has zero to many Order Line. 
+
+An Order Line can be for a LaserTasks Order. 
+
+An Order Line can be for a Bulk Order. 
+
+A Bulk Order has one or more Order Line on it. 
+
+A Bulk Order is from a Vendor. 
+
+A Vendor supplies zero to many Bulk Orders. 
+
+A Vendor supplies zero to many Materials. 
+
+A Material is from a Vendor. 
+
+A Material is for zero to many Order Line. 
+
+An Order Line contains a Material. 
+</pre>
             </article>
 
             <article class="card">
                 <h3>Coding Sample</h3>
-                <p>Brief description of what the code does.</p>
-                <p>The Code Its Self.</p>
+                <p>
+                    This is a simple Ducky script I made for my <a href="https://shop.hak5.org/products/bash-bunny" target="_blank">Hak5 Bash Bunny</a>
+                    to demonstrate a hotplug attack. The script will launch once the Bash Bunny is plugged in. Upon its launch, the script  will open
+                    a Windows Run box directing you to Rick Astley's - Never Gonna Give You Up music video on YouTube, then will open Notepad through
+                    another Windows Run box, open a new tab in Notepad, and greet the user with a note that states "Please don't plug in random USB's,
+                    it's not safe." effectively demonstrating a hotplug attack and the potential danger of plugging in random USBs. 
+                    For more coding projects, have a look at my GitHub!
+                </p>
+<pre class="code-box"><code>#Set up
+LED SETUP
+ATTACKMODE HID
+GET SWITCH_POSITION
+#Attack
+LED ATTACK
+#Open run dialog box
+QUACK WINDOWS r
+QUACK DELAY 400
+#Open Rick Astley's - Never Gonna Give You Up on YouTube
+Q STRING "https://www.youtube.com/watch?v=5SZYz7lZRRI"
+QUACK ENTER
+QUACK DELAY 400
+#Open run dialog box
+QUACK WINDOWS r
+QUACK DELAY 400
+#Open notepad
+QUACK STRING notepad
+QUACK ENTER
+QUACK DELAY 600
+#Open a new tab in notepad
+QUACK CTRL n
+QUACK DELAY 600
+#Leave security warning
+Q STRING "Please don't plug in random USB's, it's not safe."
+#Finished
+LED FINISH
+</code></pre>
             </article>
 
             <article class="card">
@@ -67,9 +127,13 @@
                target="_blank"
                rel="noopener noreferrer"
                aria-label="Visit my GitHub profile">
-                <img src="resources/images/GitHub_Invertocat_White.png" 
-                     alt="" 
+                <img src="resources/images/GitHub_Invertocat_White.png"
+                     alt=""
                      class="footer-icon">
+            </a>
+            <a href="mailto:stuart@gurlevitch.com?subject=Portfolio%20inquiry"
+               aria-label="Email me">
+                <img src="resources/images/emailFooter.png" alt="" class="footer-icon">
             </a>
         </div>
     </footer>

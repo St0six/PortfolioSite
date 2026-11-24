@@ -14,6 +14,10 @@ h2 {
     text-align: center;
 }
 
+.center {
+    text-align: center;
+}
+
 .site-header {
     min-height: 240px;
     padding: 3rem 1rem;
@@ -41,7 +45,7 @@ h2 {
 
     .site-header h1,
     .site-header p {
-        font-family: "Pixelify Sans", sans-serif;
+        font-family: "Space Mono", monospace;
         color: #F7F7F7;
         text-shadow: 2px 3px 6px #000;
         margin: 0.25rem 0;
@@ -142,6 +146,17 @@ main {
     }
 }
 
+.code-box {
+    box-sizing: border-box;
+    width: 75%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid #6b5b95;
+    border-radius: 14px;
+    background-color: #fff;
+    overflow-x: auto;
+}
+
 .badge {
     display: block;
     width: 150px;
@@ -149,6 +164,33 @@ main {
     object-fit: contain;
     margin-inline: auto;
 }
+
+.education-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+    .education-layout .education-image {
+        grid-column: 1;
+        justify-self: start;
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .education-layout .education-details {
+        grid-column: 2;
+        text-align: center;
+    }
+
+    .education-layout .badge {
+        grid-column: 3;
+        justify-self: end;
+        margin-inline: 0;
+    }
 
 .contact-links {
     display: flex;
@@ -169,12 +211,19 @@ main {
     object-fit: contain;
 }
 
+.email-icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
 .resume {
     text-align: center;
 }
 
 .site-footer {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Space Mono", monospace;
     padding: 1rem;
     text-align: center;
     background: #222;
@@ -206,6 +255,15 @@ main {
 
     main {
         padding: 1.25rem;
+    }
+
+    .education-layout .education-image {
+        width: 48px;
+    }
+
+    .education-layout .badge {
+        width: 100px;
+        height: 100px;
     }
 }
 
